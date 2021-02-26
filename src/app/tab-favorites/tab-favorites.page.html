@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Favorites</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="favorites" >
+  <ion-grid class="fullHeight fullWidth">
+
+    <div *ngIf="favorites.length > 0">
+
+      <ion-row>
+        <ion-col class="ion-no-padding">
+          <p class="ion-padding-start ion-no-margin ion-margin-top subtitle">(<strong>{{favorites.length}}</strong> total)</p>
+        </ion-col>
+      </ion-row>
+
+    <ion-row   class="center-item">
+      <ion-list *ngFor="let favorite of this.favorites" class="ion-no-padding center-item">
+        <ion-col class="ion-margin-bottom">
+    <ion-card
+              (click)="router.navigate(['recipe-detail', favorite.recipe.id.toString()]
+    , {relativeTo: route})">
+      <div>
+        <ion-img src="{{favorite.recipe.image}}" alt="{{favorite.recipe.image}} cover"
+                 class="cover"></ion-img>
+      </div>
+
+      <ion-card-header>
+        <ion-card-title>{{favorite.recipe.title}}</ion-card-title>
+      </ion-card-header>
+
+    </ion-card>
+        </ion-col>
+  </ion-list>
+    </ion-row>
+  </div>
+
+    <ion-row *ngIf="favorites.length == 0 || !favorites"
+             class="ion-justify-content-center ion-align-items-center fullHeight fullWidth">
+      <ion-col class="ion-text-center">
+      You didn't add any recipes yet!
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

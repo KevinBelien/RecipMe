@@ -1,0 +1,45 @@
+.list-number{
+  font-size: 2rem;
+  color: #ccc;
+  font-weight: bold;
+}
+
+.text-mute{
+  color: #999;
+  font-weight: bold;
+}
+
+.fav-icon{
+  font-size: 1.5rem;
+  padding-left: 5px;
+  vertical-align: bottom;
+  color:#EB0000;
+}
+
+.time-icon{
+  font-size: 1.5rem;
+  vertical-align: bottom;
+  padding-right: 5px;
+  color: #999;
+}
+
+.fav-button:hover{
+  cursor: pointer;
+}
+
+.fullHeight{
+  height: 100%;
+}
+
+.fullWidth{
+  width: 100%;
+}
+
+.center-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
