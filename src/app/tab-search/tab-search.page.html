@@ -1,0 +1,48 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-title>Search recipes</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid class="fullHeight fullWidth">
+
+        <ion-searchbar (ionChange)="searchRecipes($event.target.value)" (search)="closeKeyboard()"
+                       placeholder="meal"></ion-searchbar>
+
+
+        <ion-list *ngIf="searchResults" class="ion-no-padding">
+            <ion-row *ngIf="amountResults > 0">
+                <ion-col class="ion-no-padding">
+                    <p class="ion-padding-start ion-no-margin ion-margin-top subtitle">
+                        (<strong>{{amountResults}}</strong> result<span *ngIf="amountResults > 1">s</span>)</p>
+                </ion-col>
+            </ion-row>
+            <ion-row *ngFor="let searchResult of searchResults | async">
+                <ion-col>
+                    <ion-card>
+                        <div>
+                            <ion-img src="{{searchResult.image}}" alt="{{searchResult.title}} cover"
+                                     class="cover"></ion-img>
+                        </div>
+                        <ion-card-header>
+                            <ion-card-title>{{searchResult.title}}</ion-card-title>
+                        </ion-card-header>
+                        <ion-card-content innerHTML="{{searchResult.summary}}"></ion-card-content>
+                        <ion-button class="detail-button ion-margin" (click)="router.navigate(['recipe-detail', searchResult.id.toString()]
+  , {relativeTo: route})">Details
+                        </ion-button>
+                    </ion-card>
+                </ion-col>
+            </ion-row>
+        </ion-list>
+        <ion-row *ngIf="(searchResults | async)?.length==0"
+                 class="ion-justify-content-center ion-align-items-center no-result">
+            <ion-col class="no-result" class="ion-text-center ion-no-padding ">
+                No matching results!
+            </ion-col>
+
+        </ion-row>
+    </ion-grid>
+</ion-content>
+

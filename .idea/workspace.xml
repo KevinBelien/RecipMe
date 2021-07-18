@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="67656223-8631-4f1c-8722-a7735b88d185" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1mDGI64neT6JCHDPdJteklSNDyl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="excluded.www.directory" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Users\kevin\Projects\Project_RecipeApp\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\School\Tweede_jaar\Mobiele_App\Project_RecipeApp\resources" />
+      <recent name="C:\School\Tweede_jaar\Mobiele_App\Project_RecipeApp\src\assets" />
+      <recent name="C:\School\Tweede_jaar\Mobiele_App\Project_RecipeApp\src\app\services" />
+      <recent name="C:\School\Tweede_jaar\Mobiele_App\Project_RecipeApp\src\app\types" />
+      <recent name="C:\School\Tweede_jaar\Mobiele_App\Project_RecipeApp\src\app" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.Angular CLI Server">
+    <configuration name="Tests (app)" type="JavaScriptTestRunnerKarma">
+      <config-file value="$PROJECT_DIR$/karma.conf.js" />
+      <working-directory value="$PROJECT_DIR$" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="E2E Tests (app)" type="JavaScriptTestRunnerProtractor">
+      <config-file value="$PROJECT_DIR$/e2e/protractor.conf.js" />
+      <node-interpreter value="project" />
+      <protractor-options value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="67656223-8631-4f1c-8722-a7735b88d185" name="Default Changelist" comment="" />
+      <created>1609020665231</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609020665231</updated>
+      <workItem from="1609020667670" duration="11575000" />
+      <workItem from="1609100228179" duration="9696000" />
+      <workItem from="1609117223609" duration="830000" />
+      <workItem from="1609118858454" duration="1176000" />
+      <workItem from="1609120445971" duration="703000" />
+      <workItem from="1609126419604" duration="8044000" />
+      <workItem from="1609178175325" duration="25743000" />
+      <workItem from="1609270435711" duration="32434000" />
+      <workItem from="1609354851958" duration="1581000" />
+      <workItem from="1609357044618" duration="508000" />
+      <workItem from="1609359207373" duration="25459000" />
+      <workItem from="1609393021357" duration="997000" />
+      <workItem from="1609398391849" duration="1853000" />
+      <workItem from="1609408240579" duration="5351000" />
+      <workItem from="1609414175830" duration="17146000" />
+      <workItem from="1609533707545" duration="21086000" />
+      <workItem from="1609567567014" duration="5000" />
+      <workItem from="1609567584905" duration="17164000" />
+      <workItem from="1609590163132" duration="11284000" />
+      <workItem from="1609609488785" duration="282000" />
+      <workItem from="1609694185889" duration="18432000" />
+      <workItem from="1609719434611" duration="686000" />
+      <workItem from="1609722235871" duration="156000" />
+      <workItem from="1609735698420" duration="954000" />
+      <workItem from="1610312324013" duration="7648000" />
+      <workItem from="1610325062875" duration="370000" />
+      <workItem from="1610347234223" duration="3636000" />
+      <workItem from="1613554385690" duration="786000" />
+      <workItem from="1613556963899" duration="2466000" />
+      <workItem from="1614349285143" duration="1227000" />
+      <workItem from="1614351705596" duration="3610000" />
+      <workItem from="1615974614028" duration="610000" />
+      <workItem from="1616054217389" duration="1188000" />
+      <workItem from="1626615712870" duration="7699000" />
+      <workItem from="1626625219491" duration="83000" />
+      <workItem from="1626625323234" duration="52000" />
+      <workItem from="1626626061543" duration="2459000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

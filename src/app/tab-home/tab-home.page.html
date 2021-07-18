@@ -1,0 +1,51 @@
+<ion-header [translucent]="false">
+  <ion-toolbar color="primary">
+    <ion-title>Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="fullWidth fullHeight">
+  <ion-row>
+    <ion-col class="ion-no-padding">
+      <h1 class="ion-padding-start">Featured</h1>
+    </ion-col>
+  </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+        <ion-label>Meal Type</ion-label>
+        <ion-select class="ion-text-capitalize" ok-text="Adjust" placeholder="meal type" [(ngModel)]="selectedMealType" (ionChange)="mealTypeChanged()" >
+          <ion-select-option class="ion-text-capitalize" *ngFor="let mealType of mealTypes">{{mealType}}</ion-select-option>
+        </ion-select>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-no-margin ion-justify-content-center ion-align-items-center">
+      <ion-list class=" ion-margin-horizontal">
+        <ion-col *ngFor="let recipe of this.recipes | async">
+          <ion-card
+                  (click)="router.navigate(['recipe-detail', recipe.id.toString()]
+                  , {relativeTo: route})" class="ion-margin-bottom">
+            <div>
+              <ion-img src="{{recipe.image}}" alt="{{recipe.image}} cover"
+                       class="cover"></ion-img>
+            </div>
+
+            <ion-card-header>
+              <ion-card-title>{{recipe.title}}</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-icon class="time-icon" name="timer"></ion-icon>
+              <ion-text>{{recipe.readyInMinutes}} min</ion-text>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-list>
+    </ion-row>
+  </ion-grid>
+
+
+
+</ion-content>

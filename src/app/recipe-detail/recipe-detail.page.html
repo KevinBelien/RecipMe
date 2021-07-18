@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Recipe information</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+  <ion-content *ngIf="favorites && recipe" class="fullHeight">
+    <ion-header>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-img class="ion-margin-bottom" src="{{recipe.image}}" alt="{{recipe.title}} cover"
+              class="cover"></ion-img>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-title class="ion-margin ion-text-center">{{recipe.title}}</ion-title>
+          </ion-col>
+        </ion-row>
+        <ion-row class="ion-margin-bottom">
+          <ion-col>
+            <ion-icon class="time-icon" name="timer"></ion-icon>
+            <ion-text>{{recipe.readyInMinutes}} min</ion-text>
+          </ion-col>
+          <ion-col>
+            <div *ngIf="favorites">
+            <ion-buttons class="ion-text-right ion-justify-content-end" (click)="manageFavorite();">
+              <ion-label *ngIf="favorites">{{buttonText}}</ion-label>
+              <ion-icon *ngIf="favorites" name="{{icon}}" class="fav-icon"></ion-icon>
+            </ion-buttons>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-header>
+
+  <ion-toolbar>
+    <ion-segment class="center-item" scrollable [(ngModel)]="selectedSegment">
+      <ion-segment-button *ngFor="let s of segments" [value]="s">
+        {{s}}
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
+  <ion-list *ngIf="selectedSegment == Segment.INGREDIENTS">
+    <ion-grid>
+      <ion-row class="fullWidth">
+          <ion-item lines="full" class="ion-margin fullWidth" *ngFor="let ingredient of recipe.ingredients">
+            <ion-col size="6">
+            <div>
+              <p class="ion-justify-content-start ion-text-capitalize">{{ingredient.name}}</p>
+            </div>
+            </ion-col>
+            <ion-col size="6">
+            <div class="ion-text-right ion-justify-content-end">
+              <p class="ion-text-end ion-justify-self-end text-mute">{{ingredient.measures.metric.amount}}&nbsp;{{ingredient.measures.metric.unitShort}}</p>
+            </div>
+        </ion-col>
+          </ion-item>
+      </ion-row>
+    </ion-grid>
+  </ion-list>
+
+<ion-grid *ngIf="selectedSegment == Segment.INSTRUCTIONS" class="fullWidth">
+  <ion-list *ngIf="recipe.instructions.length > 0 ">
+    <!--<div [innerHTML]="recipe.instructions"></div>-->
+    <ion-item *ngFor="let instruction of recipe.instructions; let i = index" >
+      <p><span class="list-number ion-no-padding">{{i + 1}}.</span> {{instruction.step}}</p>
+    </ion-item>
+  </ion-list>
+  <ion-row *ngIf="recipe.instructions.length < 1" class="ion-margin-top">
+    <ion-col class="center-item">
+        No instructions available!
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+
+  </ion-content>

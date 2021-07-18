@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Shopping list</ion-title>
+    <ion-button class="ion-margin-horizontal"  (click)="presentLabelAlert()" slot="end">
+      <ion-icon slot="icon-only" name="add"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="fullHeight fullWidth">
+
+    <div *ngIf="ingredients && ingredients.length > 0" class="fullWidth">
+      <ion-row>
+        <ion-col class="ion-no-padding">
+          <h1 class="ion-padding-start">Ingredients</h1>
+          <p class="ion-padding-start ion-no-margin ion-margin-top subtitle">(<strong>{{ingredients.length}}</strong> total)</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="ion-no-padding">
+          <ion-list class="ion-no-padding">
+            <ion-item *ngFor="let ingredient of ingredients" class="ion-margin-vertical">
+              <ion-row class="ion-align-items-center ion-justify-content-center fullWidth" >
+                <ion-col>
+                  <div>{{ingredient.name}}</div>
+                </ion-col>
+                <ion-col class="ion-justify-content-end ion-text-right" >
+                  <ion-icon (click)="removeIngredient(ingredient.name)"  color="danger" name="trash" class="trash-icon"></ion-icon>
+                </ion-col>
+              </ion-row>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col class="ion-no-padding ion-margin-bottom">
+          <ion-button fill="outline" color="danger" class="ion-padding ion-margin-bottom fullWidth" (click)="removeAllIngredients()">Clear list</ion-button>
+        </ion-col>
+      </ion-row>
+
+    </div>
+    <ion-row *ngIf="ingredients?.length == 0 || !ingredients" class="fullHeight fullWidth ion-justify-content-center ion-align-items-center">
+      <ion-col class="ion-text-center ion-no-padding">
+        You didn't add any ingredients yet!
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+

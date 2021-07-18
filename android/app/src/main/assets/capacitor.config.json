@@ -1,0 +1,27 @@
+{
+  "appId": "com.belien.kevin.recipme",
+  "appName": "RecipMe",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    },
+    "CapacitorFirebaseAuth": {
+      "providers": [
+        "google.com",
+        "phone"
+      ],
+      "languageCode": "nl",
+      "nativeAuth": false,
+      "permissions": {
+        "google": [
+          "profile",
+          "https://www.googleapis.com/auth/drive"
+        ]
+      }
+    }
+  },
+  "cordova": {}
+}

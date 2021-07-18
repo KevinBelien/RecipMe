@@ -1,0 +1,28 @@
+<ion-app>
+  <ion-split-pane contentId="main">
+    <!--  the side menu  -->
+    <ion-menu contentId="main">
+      <ion-content>
+        <ion-item>
+          <ion-avatar slot="start">
+            <img [src]="authService.getProfilePic()">
+          </ion-avatar>
+          <ion-label>
+            <ion-list-header>{{authService.getDisplayName()}}</ion-list-header>
+            <ion-note *ngIf="authService.getEmail()"
+                      class="ion-margin-start">{{authService.getEmail()}}</ion-note>
+          </ion-label>
+        </ion-item>
+
+        <ion-list *ngIf="authService.isLoggedIn()" lines="none">
+          <ion-item (click)="authService.signOut()">
+            Logout
+          </ion-item>
+        </ion-list>
+      </ion-content>
+
+    </ion-menu>
+    <!-- the main content -->
+    <ion-router-outlet id="main"></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>
