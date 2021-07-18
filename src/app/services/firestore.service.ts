@@ -13,12 +13,12 @@ export class FirestoreService {
 
   constructor(private authService: AuthService, private afs: AngularFirestore) { }
 
-  addToFavorites = (rec: Recipe): void => {
+  addToFavorites = async (rec: Recipe): Promise<void> => {
     const favorite = {
       user: this.authService.getUserUID(),
       recipe: rec
     };
-    this.afs.collection<Favorite>('favorites').add(favorite);
+    await this.afs.collection<Favorite>('favorites').add(favorite);
   }
 
   getFavorites = (favoritesChannel: string, userID: string): Observable<Favorite[]> => {
@@ -30,7 +30,7 @@ export class FirestoreService {
         );
   }
 
-  deleteFavorite = (favorite: Favorite): void => {
-    this.afs.collection<Favorite>('favorites').doc(favorite.key).delete();
+  deleteFavorite = async (favorite: Favorite): Promise<void> => {
+    await this.afs.collection<Favorite>('favorites').doc(favorite.key).delete();
   }
 }

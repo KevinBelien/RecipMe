@@ -53,8 +53,6 @@ export class ApiService {
 
 
     getRecipeIngredientsResult = (id: string): Observable<Recipe> => {
-        console.log(this.BASE_URL + '/' + id + '/information' +  '?apiKey=' + this.API_KEY +
-            '&includeNutrition=false');
         return this.http.get<any>(
             this.BASE_URL + '/' + id + '/information' +  '?apiKey=' + this.API_KEY + '&includeNutrition=false'
         )

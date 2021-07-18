@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="67656223-8631-4f1c-8722-a7735b88d185" name="Default Changelist" comment="" />
+    <list default="true" id="67656223-8631-4f1c-8722-a7735b88d185" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/api.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/api.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/firestore.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/firestore.service.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -122,7 +126,8 @@
       <workItem from="1626615712870" duration="7699000" />
       <workItem from="1626625219491" duration="83000" />
       <workItem from="1626625323234" duration="52000" />
-      <workItem from="1626626061543" duration="2459000" />
+      <workItem from="1626626061543" duration="3028000" />
+      <workItem from="1626649817374" duration="656000" />
     </task>
     <servers />
   </component>
