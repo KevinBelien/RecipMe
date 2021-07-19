@@ -5,9 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.firebase/hosting.d3d3.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.d3d3.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/login/login.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/login/login.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/api.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/api.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/localstorage.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/localstorage.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/tab-home/tab-home.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/tab-home/tab-home.page.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +127,7 @@
       <workItem from="1626625219491" duration="83000" />
       <workItem from="1626625323234" duration="52000" />
       <workItem from="1626626061543" duration="3028000" />
-      <workItem from="1626649817374" duration="5391000" />
+      <workItem from="1626649817374" duration="6600000" />
     </task>
     <servers />
   </component>
