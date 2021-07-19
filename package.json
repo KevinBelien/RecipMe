@@ -17,7 +17,8 @@
     "androidIconAdaptive": "cordova-res android --type adaptive-icon --icon-foreground-source resources/icon.png --icon-background-source #FFFFFF --skip-config --copy",
     "android-resources": "npm run androidSplash && npm run androidIconAdaptive",
     "ios-resources": "cordova-res ios --skip-config --copy",
-    "gen-resources": "npm run ios-resources && npm run android-resources"
+    "gen-resources": "npm run ios-resources && npm run android-resources",
+    "fireRelease": "ionic build --prod && firebase deploy"
   },
   "private": true,
   "dependencies": {
