@@ -18,7 +18,7 @@ export class LocalstorageService {
     }
 
 
-  getIngredients = async (): Promise<any> => {
+  getIngredients = async (): Promise<Ingredient[]> => {
     const item = await Storage.get({ key: 'ingredients' });
     return JSON.parse(item.value);
   }

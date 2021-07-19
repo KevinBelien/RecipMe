@@ -10,12 +10,12 @@ import {environment} from '../../environments/environment';
   providedIn: 'root'
 })
 export class ApiService {
-  private readonly BASE_URL = 'https://api.spoonacular.com/recipes';
+  private readonly BASE_URL = environment.spoonacularConfig.baseUrl;
   // <editor-fold desc="Verberg de API key tijdens projecties">
     private readonly API_KEY = environment.spoonacularConfig.apiKey;
   // </editor-fold>
 
-    data: any[] = [];
+    data: Record<string, any>[] = [];
 
   constructor(private http: HttpClient) { }
 
@@ -53,11 +53,11 @@ export class ApiService {
 
 
     getRecipeIngredientsResult = (id: string): Observable<Recipe> => {
-        return this.http.get<any>(
+        return this.http.get<Record<string, any>>(
             this.BASE_URL + '/' + id + '/information' +  '?apiKey=' + this.API_KEY + '&includeNutrition=false'
         )
             .pipe(
-                map<any, Recipe>(r => this.convertRecipe(r)),
+                map<Record<string, any>, Recipe>(r => this.convertRecipe(r)),
                 catchError(error => {
                     console.log(error);
                     return of (null);
@@ -65,10 +65,6 @@ export class ApiService {
                 retry(3)
             );
     }
-
-    /*getRecipeIngredientsResult = (id: string) => {
-        return this.http.get(this.BASE_URL + '/' + id + '/information' +  '?apiKey=' + this.API_KEY + '&includeNutrition=false');
-    }*/
 
   debounceRequest = <T, R>(subject: Subject<T>, fn: UnaryFunction<T, Observable<R>>): Observable<R> => {
     return subject
@@ -78,7 +74,7 @@ export class ApiService {
             switchMap(s => fn(s))
         );
   }
-    convertRecipe = (obj: any): Recipe => {
+    convertRecipe = (obj: Record<string, any>): Recipe => {
         return {
             id: obj.id,
             image: obj.image,

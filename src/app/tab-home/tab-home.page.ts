@@ -29,9 +29,6 @@ export class TabHomePage implements OnInit{
   constructor(public apiService: ApiService, public router: Router, public route: ActivatedRoute) { }
 
   ngOnInit(){
-   /*this.apiService.getFeaturedTypesRecipesResults(this.selectedMealType, this.amountHits).subscribe(res => {
-     this.recipes = res;
-   });*/
     this.recipes = this.getRecipeResults();
   }
   mealTypeChanged = () => {
