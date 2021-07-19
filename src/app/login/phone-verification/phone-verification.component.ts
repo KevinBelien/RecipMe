@@ -74,10 +74,6 @@ export class PhoneVerificationComponent implements OnInit {
         }, 60000);
     }
 
-    /**
-     * Callback voor de login poging. Als de poging niet
-     * @param user
-     */
     private verifyCallback = (user: firebase.User | null) => {
         // De eerste waarde is altijd null, want de gebruiker was nog niet ingelogd.
         if (user === null) {
