@@ -89,7 +89,7 @@ export class RecipeDetailPage implements OnInit {
       await this.fsService.deleteFavorite(checkFavorite);
       this.buttonText = 'Add';
       this.icon = 'heart-outline';
-      await this.notService.showToast('Recipe has been deleted from your favorites!').then(r => r);
+      await this.notService.showToast('Recipe has been deleted from your favorites!');
     }
     else{
       await this.fsService.addToFavorites(this.recipe);

@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67656223-8631-4f1c-8722-a7735b88d185" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.firebase/hosting.d3d3.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.d3d3.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/login/login.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/login/login.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/recipe-detail/recipe-detail.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/recipe-detail/recipe-detail.page.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +126,7 @@
       <workItem from="1626625219491" duration="83000" />
       <workItem from="1626625323234" duration="52000" />
       <workItem from="1626626061543" duration="3028000" />
-      <workItem from="1626649817374" duration="6600000" />
+      <workItem from="1626649817374" duration="7227000" />
     </task>
     <servers />
   </component>
