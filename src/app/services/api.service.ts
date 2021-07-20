@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable, of, Subject, UnaryFunction} from 'rxjs';
-import {catchError, debounceTime, distinctUntilChanged, map, retry, switchMap, tap} from 'rxjs/operators';
+import {catchError, debounceTime, distinctUntilChanged, map, retry, switchMap} from 'rxjs/operators';
 import {RecipeSearch, RecipeSearchResult} from '../types/apiTypeRecipe';
 import {Recipe} from '../types/recipe';
 import {environment} from '../../environments/environment';

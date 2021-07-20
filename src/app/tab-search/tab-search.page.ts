@@ -1,9 +1,10 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Observable, Subject} from 'rxjs';
 import {RecipeSearchResult} from '../types/apiTypeRecipe';
 import {ApiService} from '../services/api.service';
 import {ActivatedRoute, Router} from '@angular/router';
-import { Plugins, KeyboardInfo } from '@capacitor/core';
+import { Plugins } from '@capacitor/core';
+import {IonSearchbar} from '@ionic/angular';
 const { Keyboard } = Plugins;
 
 @Component({
@@ -32,5 +33,10 @@ export class TabSearchPage implements OnInit {
 
   closeKeyboard = async (): Promise<void> => {
     await Keyboard.hide();
+  }
+
+  async blurInput(input: IonSearchbar) {
+    const nativeEl = await input.getInputElement();
+    nativeEl.blur();
   }
 }

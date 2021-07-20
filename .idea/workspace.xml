@@ -4,9 +4,11 @@
     <list default="true" id="67656223-8631-4f1c-8722-a7735b88d185" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.firebase/hosting.d3d3.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.d3d3.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/login/phone-verification/phone-verification.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/login/phone-verification/phone-verification.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/recipe-detail/recipe-detail.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/recipe-detail/recipe-detail.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/api.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/api.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/tab-search/tab-search.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/tab-search/tab-search.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/tab-search/tab-search.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/tab-search/tab-search.page.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,11 +133,15 @@
       <workItem from="1626626061543" duration="3028000" />
       <workItem from="1626649817374" duration="8450000" />
       <workItem from="1626660126923" duration="616000" />
+      <workItem from="1626760130709" duration="1463000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

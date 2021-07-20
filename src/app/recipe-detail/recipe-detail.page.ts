@@ -1,4 +1,4 @@
-import {Component, OnInit, ViewChild, AfterViewInit} from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {ApiService} from '../services/api.service';
 import {IonSlides} from '@ionic/angular';
