@@ -4,11 +4,15 @@
     <list default="true" id="67656223-8631-4f1c-8722-a7735b88d185" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.firebase/hosting.d3d3.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.d3d3.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/recipe-detail/recipe-detail.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/recipe-detail/recipe-detail.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/api.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/api.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/tab-search/tab-search.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/tab-search/tab-search.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/tab-search/tab-search.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/tab-search/tab-search.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icon/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icon/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/icon-128x128.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/icon-144x144.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/icon-144x144.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/icon-152x152.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/icon-192x192.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/icon-192x192.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/icon-384x384.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/icon-512x512.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/icon-512x512.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/icon-72x72.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/icon-72x72.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/icon-96x96.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/icon-96x96.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +43,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="excluded.www.directory" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/icon" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
@@ -49,11 +53,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kevin\Projects\Project_RecipeApp\src\assets\icon" />
+      <recent name="C:\Users\kevin\Projects\Project_RecipeApp\src\assets\icons" />
       <recent name="C:\School\Tweede_jaar\Mobiele_App\Project_RecipeApp\resources" />
       <recent name="C:\School\Tweede_jaar\Mobiele_App\Project_RecipeApp\src\assets" />
       <recent name="C:\School\Tweede_jaar\Mobiele_App\Project_RecipeApp\src\app\services" />
-      <recent name="C:\School\Tweede_jaar\Mobiele_App\Project_RecipeApp\src\app\types" />
-      <recent name="C:\School\Tweede_jaar\Mobiele_App\Project_RecipeApp\src\app" />
     </key>
   </component>
   <component name="RunManager" selected="npm.Angular CLI Server">
@@ -133,7 +137,7 @@
       <workItem from="1626626061543" duration="3028000" />
       <workItem from="1626649817374" duration="8450000" />
       <workItem from="1626660126923" duration="616000" />
-      <workItem from="1626760130709" duration="1463000" />
+      <workItem from="1626760130709" duration="4598000" />
     </task>
     <servers />
   </component>
